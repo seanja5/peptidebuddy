@@ -1,6 +1,5 @@
 # Xcode user data
-*.xcodeproj/xcuserdata/
-*.xcworkspace/xcuserdata/
+**/xcuserdata/
 *.xcworkspace/xcshareddata/
 
 # Build output
