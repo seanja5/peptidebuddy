@@ -1,6 +1,5 @@
 # Xcode user data
 **/xcuserdata/
-*.xcworkspace/xcshareddata/
 
 # Build output
 DerivedData/
