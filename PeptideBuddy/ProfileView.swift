@@ -180,6 +180,8 @@ struct ProfileSetupView: View {
                 .keyboardType(keyboard)
                 .autocorrectionDisabled()
                 .textInputAutocapitalization(.never)
+                .foregroundStyle(Color.textPrimary)
+                .tint(Color.primaryBlue)
                 .padding(DS.Spacing.md)
                 .background(Color.appSurface)
                 .cornerRadius(DS.Radius.card)

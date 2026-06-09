@@ -36,7 +36,7 @@ class ProfileViewModel: ObservableObject {
         )
         try await supabase
             .from("profiles")
-            .insert(newProfile)
+            .upsert(newProfile)
             .execute()
         profile = newProfile
         hasProfile = true
