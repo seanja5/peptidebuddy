@@ -8,11 +8,6 @@ struct PeptideBuddyApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(auth)
-                .onOpenURL { url in
-                    Task {
-                        try? await supabase.auth.session(from: url)
-                    }
-                }
         }
     }
 }

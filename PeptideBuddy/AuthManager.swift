@@ -21,11 +21,12 @@ class AuthManager: ObservableObject {
 
     var isAuthenticated: Bool { session != nil }
 
-    func signInWithGoogle() async throws {
-        try await supabase.auth.signInWithOAuth(
-            provider: .google,
-            redirectTo: URL(string: "com.seanandrews.PeptideBuddy://login-callback")
-        )
+    func signUp(email: String, password: String) async throws {
+        try await supabase.auth.signUp(email: email, password: password)
+    }
+
+    func signIn(email: String, password: String) async throws {
+        try await supabase.auth.signIn(email: email, password: password)
     }
 
     func signOut() async throws {
